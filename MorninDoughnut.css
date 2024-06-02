@@ -1,0 +1,605 @@
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .logo-icon {
+    width: 8.294rem;
+    position: relative;
+    height: 3.25rem;
+    object-fit: cover;
+  }
+  .blog,
+  .contacts,
+  .profile,
+  .skills,
+  .works {
+    text-decoration: none;
+    height: 1.75rem;
+    position: relative;
+    line-height: 1.75rem;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .profile:hover {
+    color: #ffc206;
+  }
+  .profile:focus {
+    color: #ffc206;
+  }
+  .skills:hover {
+    color: #ffc206;
+  }
+  .skills:focus {
+    color: #ffc206;
+  }
+  .works:hover {
+    color: #ffc206;
+  }
+  .works:focus {
+    color: #ffc206;
+  }
+  .blog1:hover,
+  .blog:hover,
+  .contacts1:hover,
+  .contacts:hover,
+  .profile1:hover,
+  .skills1:hover,
+  .works1:hover {
+    color: #ffc206;
+  }
+  .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.187rem;
+  }
+  .menu-icon,
+  .mobile-hamburger {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+  .menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .mobile-hamburger {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    display: none;
+  }
+  .desktop-nav-parent {
+    margin: 0;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 2.187rem;
+    text-align: left;
+    font-size: 1.188rem;
+    color: #000;
+    font-family: Montserrat;
+  }
+  .desktop-nav-parent,
+  .logo-parent,
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .logo-parent {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.625rem;
+  }
+  .nav {
+    width: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.375rem 7.375rem;
+    box-sizing: border-box;
+    min-width: 26.75rem;
+    max-width: 80rem;
+  }
+  .back {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
+  .back:hover {
+    text-decoration: underline;
+  }
+  .back-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+  }
+  .mornin-doughnut {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .https {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
+  .h3-title,
+  .link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 0.875rem;
+  }
+  .h3-title {
+    align-self: stretch;
+    flex-direction: column;
+    font-size: 3.5rem;
+  }
+  .category,
+  .p {
+    margin: 0;
+    position: relative;
+  }
+  .category {
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .p {
+    font-size: 0.875rem;
+  }
+  .category-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.812rem;
+  }
+  .tools {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .figma-photoshop-illustrator {
+    margin: 0;
+    position: relative;
+    font-size: 0.875rem;
+  }
+  .frame-container,
+  .frame-group,
+  .tools-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.812rem;
+  }
+  .frame-container,
+  .frame-group {
+    flex-direction: row;
+    gap: 6.375rem;
+  }
+  .frame-group {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 2.875rem;
+  }
+  .icon {
+    width: 65rem;
+    max-height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+  .p1 {
+    margin: 0;
+    position: relative;
+  }
+  .frame-wrapper,
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-wrapper {
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+  }
+  .h6 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .span,
+  .span1 {
+    display: block;
+  }
+  .p2 {
+    margin: 0;
+    position: relative;
+  }
+  .frame,
+  .frame-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+  }
+  .frame-div {
+    flex-direction: column;
+    gap: 1.625rem;
+  }
+  .previous {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
+  .previous:hover {
+    text-decoration: underline;
+  }
+  .next:hover {
+    text-decoration: underline;
+  }
+  .previous-wrapper {
+    width: 5.625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  .next {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
+  .frame-parent1,
+  .next-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .frame-parent1 {
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .frame-parent,
+  .wx-adv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent {
+    flex: 1;
+    flex-direction: column;
+    gap: 3.625rem;
+  }
+  .wx-adv {
+    align-self: stretch;
+    background-color: #fafafa;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3.125rem 7.5rem;
+    text-align: left;
+    font-size: 1rem;
+    color: #4a4a4a;
+    font-family: Montserrat;
+  }
+  .group-icon {
+    width: 4.813rem;
+    position: relative;
+    height: 2rem;
+    object-fit: cover;
+  }
+  .yukine-design-high-resolution- {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .blog1,
+  .contacts1,
+  .profile1,
+  .skills1,
+  .works1 {
+    text-decoration: none;
+    height: 1.75rem;
+    position: relative;
+    line-height: 1.75rem;
+    color: inherit;
+    display: inline-block;
+    transition: all 0.3s;
+  }
+  .profile-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.812rem;
+  }
+  .copyright {
+    position: relative;
+    line-height: 1.75rem;
+  }
+  .copyright-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .yukine-design-high-resolution-parent {
+    width: 64.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.812rem;
+  }
+  .footer,
+  .monin-doughnut {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer {
+    background-color: #fafafa;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3.125rem 7.625rem 3.125rem 7.5rem;
+    box-sizing: border-box;
+    min-width: 26.75rem;
+    max-width: 80rem;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #4a4a4a;
+    font-family: Montserrat;
+  }
+  .monin-doughnut {
+    position: relative;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1200px) {
+    .frame-parent1,
+    .icon {
+      align-self: stretch;
+      width: auto;
+    }
+    .frame-parent1 {
+      gap: 3.125rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .frame-parent {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .mobile-hamburger {
+      display: none;
+    }
+    .nav {
+      padding-left: 4.375rem;
+      padding-right: 4.375rem;
+      box-sizing: border-box;
+    }
+    .back-wrapper {
+      display: none;
+    }
+    .mornin-doughnut {
+      font-size: 2.5rem;
+    }
+    .https {
+      font-size: 0.75rem;
+    }
+    .category {
+      font-size: 0.875rem;
+    }
+    .p {
+      font-size: 0.75rem;
+    }
+    .tools {
+      font-size: 0.875rem;
+    }
+    .figma-photoshop-illustrator {
+      font-size: 0.75rem;
+    }
+    .icon {
+      width: auto;
+      align-self: unset;
+    }
+    .p1 {
+      font-size: 1rem;
+    }
+    .h6 {
+      font-size: 0.875rem;
+    }
+    .p2 {
+      font-size: 1rem;
+    }
+    .previous {
+      font-size: 0.875rem;
+    }
+    .frame-parent1 {
+      align-self: stretch;
+      width: auto;
+      gap: 3.125rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .frame-parent {
+      display: flex;
+    }
+    .wx-adv {
+      padding-left: 4.375rem;
+      padding-right: 4.375rem;
+      box-sizing: border-box;
+    }
+    .copyright {
+      font-size: 0.625rem;
+    }
+  }
+  @media screen and (max-width: 428px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-hamburger {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .desktop-nav {
+      display: none;
+    }
+    .mobile-hamburger {
+      display: flex;
+    }
+    .nav {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      box-sizing: border-box;
+    }
+    .mornin-doughnut {
+      font-size: 2.25rem;
+    }
+    .https {
+      font-size: 0.625rem;
+    }
+    .category {
+      font-size: 0.75rem;
+    }
+    .p {
+      font-size: 0.625rem;
+    }
+    .tools {
+      font-size: 0.75rem;
+    }
+    .figma-photoshop-illustrator {
+      font-size: 0.625rem;
+    }
+    .icon {
+      align-self: stretch;
+      width: auto;
+    }
+    .next,
+    .p1,
+    .p2,
+    .previous {
+      font-size: 0.75rem;
+    }
+    .wx-adv {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      box-sizing: border-box;
+    }
+    .blog1,
+    .profile1,
+    .skills1,
+    .works1 {
+      margin-bottom: 0.5rem;
+    }
+    .profile-parent {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      padding-bottom: 0;
+      box-sizing: border-box;
+    }
+    .copyright {
+      font-size: 0.5rem;
+    }
+  }
+  .blog27,
+  .contacts27,
+  .home,
+  .profile27,
+  .skills27,
+  .work {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+  }
+  .mobile-nav,
+  .nav-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav-contents {
+    align-self: stretch;
+    gap: 2.875rem;
+  }
+  .mobile-nav {
+    width: 100%;
+    position: relative;
+    background-color: #fafafa;
+    overflow: hidden;
+    padding: 1.875rem 1.375rem 3.125rem;
+    box-sizing: border-box;
+    opacity: 0;
+    min-width: 26.75rem;
+    max-width: 56.25rem;
+    max-height: 90%;
+    text-align: left;
+    font-size: 1.188rem;
+    color: #4a4a4a;
+    font-family: Montserrat;
+  }
+  .mobile-nav.animate {
+    animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+  }
+  

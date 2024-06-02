@@ -1,0 +1,47 @@
+.home {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.nav-contents {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.555rem;
+}
+.mobile-nav {
+  width: 100%;
+  position: relative;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.666rem 1.222rem 2.777rem;
+  box-sizing: border-box;
+  opacity: 0;
+  min-width: 23.778rem;
+  max-width: 50rem;
+  max-height: 90%;
+  text-align: left;
+  font-size: 1.056rem;
+  color: #4a4a4a;
+  font-family: Montserrat;
+}
+.mobile-nav.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

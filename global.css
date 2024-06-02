@@ -1,0 +1,16 @@
+html {
+  font-size: 16px;
+}
+body {
+  width: 100vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./WIXAdv.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans Javanese:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="wix-adv">
+      <header class="nav8">
+        <div class="logo-parent6">
+          <a href="Index.html"><img class="logo-icon8" alt="" src="./public/logo@2x.png" /></a>
+
+          <nav class="desktop-nav-parent5">
+            <div class="desktop-nav8">
+              <a class="profile21" id="profile">Profile</a>
+              <a class="skills21" href="./Skills.html" id="skills">Skills</a>
+              <a class="works21" href="./Component.html" id="works">Works</a>
+              <a class="blog21" href="./Blog.html" id="blog">Blog</a>
+              <a class="contacts21" href="./Contacts.html" id="contacts"
+                >Contacts</a
+              >
+            </div>
+            <button class="mobile-hamburger8" id="mobileHamburger">
+              <img class="menu-icon8" alt="" src="./public/menu-icon@2x.png" />
+            </button>
+          </nav>
+        </div>
+      </header>
+      <main class="wx-adv">
+        <div class="frame-parent107">
+          <div class="frame-parent108">
+            <div class="back-frame">
+              <a class="back2" href="WorkList.html">&lt; Back</a>
+            </div>
+            <div class="h3-title2">
+              <div class="title2">
+                <h2 class="wix-adv1">WIX adv</h2>
+              </div>
+              <div class="link2">
+                <a class="https2">https://</a>
+              </div>
+            </div>
+            <div class="frame-parent109">
+              <div class="category-group">
+                <h5 class="category2">Category</h5>
+                <p class="b-to-c1">B to C, サービス</p>
+              </div>
+              <div class="tools-container">
+                <h5 class="tools2">Tools</h5>
+                <p class="wix3">WIX</p>
+              </div>
+            </div>
+          </div>
+          <img class="icon47" alt="" src="./public/16917@2x.png" />
+
+          <div class="frame-wrapper31">
+            <div class="wrapper5">
+              <p class="p56">コンサルタントサイト。</p>
+            </div>
+          </div>
+          <div class="frame-parent110">
+            <div class="wrapper6">
+              <h6 class="h62">こだわった点</h6>
+            </div>
+            <div class="canva-wrapper">
+              <p class="canva">
+                架空クライアント会社のロゴはすべてCanvaを使用し作成し、実際に案件を受けた時のことを考え作成しました。
+              </p>
+            </div>
+          </div>
+          <div class="frame-parent111">
+            <div class="previous-frame">
+              <a class="previous2" id="previous">&lt; Previous</a>
+            </div>
+            <div class="next-frame" id="frameContainer1">
+              <a class="next2">Next &gt;</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer8">
+        <div class="yukine-design-high-resolution-parent6">
+          <div class="yukine-design-high-resolution-8">
+            <img class="group-icon8" alt="" src="./public/group5@2x.png" />
+          </div>
+          <div class="profile-parent6">
+            <a class="profile22" href="index.html#profile">Profile</a>
+            <a class="skills22" href="index.html#skills">Skills</a>
+            <a class="works22" href="index.html#works">Works</a>
+            <a class="blog22" href="index.html#blog">Blog</a>
+            <a class="contacts22" href="index.html#contacts">Contacts</a>
+          </div>
+          <div class="copyright-wrapper6">
+            <div class="copyright8">© 2024 YUKINE Dsign</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="mobileNav" class="popup-overlay" style="display: none">
+      <div class="mobile-nav" data-animate-on-scroll>
+        <div class="nav-contents">
+          <a class="home">Home</a>
+          <a class="profile27">Profile</a>
+          <a class="skills27">Skills</a>
+          <a class="work">Work</a>
+          <a class="blog27">Blog</a>
+          <a class="contacts27">Contacts</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      
+      var profile = document.getElementById("profile");
+      if (profile) {
+        profile.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='profile']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+      
+      var skills = document.getElementById("skills");
+      if (skills) {
+        skills.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='skills']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+      
+      var works = document.getElementById("works");
+      if (works) {
+        works.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='works']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+      
+      var blog = document.getElementById("blog");
+      if (blog) {
+        blog.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='blog']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+      
+      var contacts = document.getElementById("contacts");
+      if (contacts) {
+        contacts.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='contacts']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start" });
+          }
+        });
+      }
+      
+      var mobileHamburger = document.getElementById("mobileHamburger");
+      if (mobileHamburger) {
+        mobileHamburger.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("mobileNav");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var previous = document.getElementById("previous");
+      if (previous) {
+        previous.addEventListener("click", function (e) {
+          window.location.href = "./WixBasicLesson1.html";
+        });
+      }
+      
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "./LP.html";
+        });
+      }
+      </script>
+  </body>
+</html>
